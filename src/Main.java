@@ -2,18 +2,21 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        //New scanner created.
         Scanner inp = new Scanner(System.in);
 
+        //Data retrieved from user.
         System.out.print("Ilk sayiyi girin: ");
-        int a = inp.nextInt();
+        int firstNum = inp.nextInt();
         System.out.print("Ikinci sayiyi girin: ");
-        int b = inp.nextInt();
+        int secondNum = inp.nextInt();
         System.out.print("Ucuncu sayiyi girin: ");
-        int c = inp.nextInt();
+        int thirdNum = inp.nextInt();
 
         int d = 10, e = 2, f = 3;
 
-        System.out.println("Sonuc: " + (a+b*c-b));
+        //Results printed.
+        System.out.println("Sonuc: " + (firstNum+secondNum*thirdNum-secondNum));
         System.out.println("Sonuc: " + (d+e*f-e));
     }
 }
